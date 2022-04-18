@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Mallanna', sans-serif;
+    margin: 0;}
+
+body { background-color: rgb(193, 193, 193);}
+
+.click-me { 
+    margin: 100px 300px;
+    position: relative;
+    display: inline-block;
+    user-select: none;
+}
+
+.profile-pic:hover,  a:hover{ opacity: 0.7;}
+
+.profile-pic {
+    background-image: url('./후두려패기.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 40px; height: 40px;
+    border: none;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.692) , -1px -1px 4px rgb(255, 255, 255);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    padding: 7px 12px;
+    width: 130px; height: 285px;
+    background-color: white;
+}
+.dropdown-menu:hover {
+    display: block;
+}
+.click-me:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dropdown-menu span {
+    padding: 2px;
+}
+.dropdown-menu span:hover {
+    background-color: rgb(75, 75, 229);
+    color: white;
+    cursor: pointer;
+}
+.gists {
+    border-bottom: 1px solid gainsboro;}
+
+.top-menu {
+    padding-bottom: 5px;
+    border-bottom: 1px solid gainsboro;
+}
+a { text-decoration: none;
+    font-style: none;
+    font-weight: 600;
+    color: #000;}
